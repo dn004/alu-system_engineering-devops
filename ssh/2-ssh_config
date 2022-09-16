@@ -34,7 +34,7 @@ Include /etc/ssh/sshd_config.d/*.conf
 #MaxAuthTries 6
 #MaxSessions 10
 
-# IdentityFile ~/.ssh/school
+IdentityFile ~/.ssh/school
 
 # PubkeyAuthentication yes
 

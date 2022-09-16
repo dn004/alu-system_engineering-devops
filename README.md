@@ -1,1 +1,1 @@
-# 0. Use a private key
+Setting and connecting to server using Secure Shell

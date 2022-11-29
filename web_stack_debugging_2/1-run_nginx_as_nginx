@@ -5,7 +5,8 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install nginx
 
-chown nginx:nginx /etc/nginx/nginx.conf
+chown nginx:nginx/etc/nginx/nginx.conf
+chmod 700 /etc/nginx/nginx.conf
 
 sudo ufw enable
 sudo ufw allow 'Nginx HTTP'

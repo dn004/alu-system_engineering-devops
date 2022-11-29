@@ -2,6 +2,7 @@
 #Fixing this container so that Nginx is running as the nginx user.
 
 pkill nginx
+sudo sed -i 's/#user www-data/user nginx/'/etc/nginx/nginx.conf
 chown nginx:nginx/etc/nginx/nginx.conf
 chmod 700 /etc/nginx/nginx.conf
 

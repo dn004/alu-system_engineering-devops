@@ -2,11 +2,9 @@
 #Fixing this container so that Nginx is running as the nginx user.
 
 sudo /etc/init. d/apache2 stop
+sudo service nginx stop
 chown nginx:nginx/etc/nginx/nginx.conf
 chmod 700 /etc/nginx/nginx.conf
 
-sudo ufw enable
-sudo ufw allow 'Nginx HTTP'
-sudo ufw allow ssh
 sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
 sudo service nginx restart

@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 #Fixing this container so that Nginx is running as the nginx user.
 
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install nginx
-sudo /etc/init. d/apache2
+sudo /etc/init. d/apache2 stop
 chown nginx:nginx/etc/nginx/nginx.conf
 chmod 700 /etc/nginx/nginx.conf
 
